@@ -1,0 +1,15 @@
+.footer_item {
+    padding: 10px 6px;
+    padding-bottom: 14px;
+    transition: transform 0.3s ease; // 添加过渡效果
+    cursor: pointer; // 改变鼠标指针形状
+
+    &:hover,
+    .footer_item_flex:hover & {
+        transform: scale(1.1);
+    }
+
+    .footer_item_flex {
+        // pointer-events: none;
+    }
+}
