@@ -57,7 +57,7 @@ const Decode = () => {
     );
     return (
         <>
-            <div style={{ height: "447px", overflow: "hidden" }}>
+            <div style={{ height: "391px", overflow: "hidden" }}>
                 <Flex gap="middle" justify='center' vertical align='center' style={{ margin: "50px 20px 20px 20px" }} >
                     <Upload
                         name="avatar"
