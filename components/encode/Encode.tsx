@@ -27,11 +27,11 @@ const Encode = () => {
                     preview={false}
                 />
                 <div className={styles.img_text}>
-                    <Button type="dashed" icon={<DownloadOutlined />} style={{marginBottom:"12px"}}>
+                    <Button type="dashed" icon={<DownloadOutlined />} style={{ marginBottom: "12px" }}>
                         Download
                     </Button>
                     <br></br>
-                    <Button type="link" size='small'>
+                    <Button type="link" size='small' onClick={gohref}>
                         Customize QR Code here
                     </Button>
                 </div>
@@ -44,6 +44,16 @@ const Encode = () => {
 
 }
 const onSearch: SearchProps['onSearch'] = (value, _e, info) => {
+
+}
+const gohref = () => {
+    const url = browser.runtime.getURL('/newpage.html')
+    // browser.Tabs.
+    browser.tabs.create({
+        url: url
+    })
+    // console.log(url);
+
 
 }
 

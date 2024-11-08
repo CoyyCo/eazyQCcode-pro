@@ -6,6 +6,7 @@ import styles from './App.module.scss'
 import { Button, theme,Space, Radio, ConfigProvider, Input, GetProps } from 'antd';
 import Encode from '@/components/encode/Encode';
 import Decode from '@/components/decode/Decode';
+import { grey } from '@ant-design/colors';
 const { useToken } = theme;
 const App: React.FC = () => {
   const {token} = useToken();
